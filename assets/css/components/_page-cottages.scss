@@ -1,0 +1,154 @@
+// ===========================================================================
+// COTTAGES COMPONENTS
+// ===========================================================================
+
+.cottages-nav {
+  &__list {
+    &-item {
+      font-family: $font-sans;
+      text-transform: uppercase;
+      list-style: none;
+    }
+  }
+}
+
+.cottages-select {
+  font-family: $font-sans;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.2em;
+  &__item {
+    font-family: $font-sans;
+    text-transform: uppercase;
+  }
+}
+
+.cottage {
+  &-card {
+  }
+  &__descr {
+    background-color: $gray1;
+    color: $gray6;
+    padding: 2em 1em;
+    @media screen and (min-width: 768px) {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+    @media screen and (min-width: 1000px) {
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+    @media screen and (min-width: 1600px) {
+      padding: 4rem 8rem;
+    }
+    p {
+      margin-bottom: 1em;
+      line-height: 1.5em;
+    }
+  }
+  &__header {
+    text-align: center;
+  }
+  &__number {
+    font-family: $font-sans;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 0.7em;
+  }
+  &__name {
+    font-family: $font-cursive;
+    font-size: 2.3rem;
+    font-weight: normal;
+    margin-bottom: 0.7em;
+  }
+  &__number {
+    display: none;
+    @media screen and (min-width: 1000px) {
+      display: initial;
+    }
+  }
+
+  &__lists {
+    @media screen and (min-width: 1100px) {
+      margin-top: 0.8rem;
+      margin-bottom: 3.8rem;
+    }
+    @media screen and (min-width: 1300px) {
+      margin-top: 2rem;
+    }
+    @media screen and (min-width: 1600px) {
+      grid-gap: 4rem;
+    }
+  }
+  &__descrlist {
+    margin-left: 1rem;
+    &-item {
+      margin-bottom: 0.4em;
+    }
+  }
+
+  &__rates {
+    text-align: center;
+  }
+  &__ratestext {
+    padding: 2em 1em;
+    color: $gray6;
+    @media screen and (min-width: 768px) {
+      color: $gray1;
+      background-color: $gray6;
+    }
+  }
+  &__ratesheading {
+    margin-bottom: 1em;
+  }
+  &__ratessubheading {
+  }
+  &__ratesimage {
+    box-sizing: border-box;
+    position: relative;
+    background: url("../../assets/img/decoration1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // @media screen and (min-width: 1300px) {
+    //   margin: 2rem;
+    // }
+    & img {
+      max-width: 100%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      bottom: 50%;
+      right: 50%;
+      transform: translateX(50%) translateY(50%);
+      background-color: $gray1;
+      opacity: 0.6;
+      @media screen and (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
+  &__indivrates {
+    &1 {
+      // margin-top: 1.8em;
+    }
+    h3 {
+      margin-bottom: 0.7em;
+    }
+    p:nth-of-type(2) {
+      margin-top: 1em;
+    }
+  }
+  &__breakfast {
+    font-style: italic;
+    font-size: 0.8rem;
+    &::before {
+      content: "* ";
+    }
+    margin-top: 2em;
+  }
+}

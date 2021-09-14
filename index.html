@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" /> -->
+    <meta
+      name="viewport"
+      content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no"
+    />
+    <title>Brakdakkie Guest Cottages | Home</title>
+    <!-- Google Fonts import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css?ver=0.3" />
+  </head>
+  <body>
+    <!-- Full-screen background with opacity -->
+    <div class="page-background__image page-background__image--home"></div>
+    <div class="page-background__overlay page-background__overlay--home"></div>
+    <!-- ----------------------------------- -->
+
+    <div class="page-wrapper page-wrapper--home">
+      <header class="page-header page-header--transparent">
+        <div class="page-header__wrapper">
+          <div class="branding">
+            <a href="#">
+              <img
+                class="branding__logo"
+                src="/assets/img/brakdakkie-light.svg"
+                alt="Brakdakkie Guest Cottages"
+              />
+            </a>
+          </div>
+
+          <nav class="desktop-nav desktop-nav--light">
+            <ul class="desktop-nav__list">
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="about/index.html">About</a>
+              </li>
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="cottages/index.html">Cottages</a>
+              </li>
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a
+                  href="/rates/index.html"
+                  >Rates</a
+                >
+              </li>
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="/contact/index.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Nav Menu -->
+          <nav class="mobile-nav mobile-nav--light">
+            <div class="mobile-nav__title">
+              <a href="#">Brakdakkie <br />Guest Cottages</a>
+            </div>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="about/index.html">About</a>
+              </li>
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="cottages/index.html">Cottages</a>
+              </li>
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a
+                  href="/rates/index.html"
+                  >Rates</a
+                >
+              </li>
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="/contact/index.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu">
+            <div class="mobile-menu__container">
+              <div
+                class="
+                  mobile-menu__line
+                  mobile-menu__line--light
+                  mobile-menu__top-bar
+                "
+              ></div>
+              <div
+                class="
+                  mobile-menu__line
+                  mobile-menu__line--light
+                  mobile-menu__middle-bar
+                "
+              ></div>
+              <div
+                class="
+                  mobile-menu__line
+                  mobile-menu__line--light
+                  mobile-menu__bottom-bar
+                "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main -->
+      <main class="main-content main-content--home">
+        <p class="jumbotext">
+          Prince Albert’s <br class="small-screen" />premier destination
+          <br class="small-screen" />for <br class="medium-screen" />an
+          <span class="jumbotext--cursive">authentic</span>
+          <br class="small-screen" />Karoo experience.
+        </p>
+        <a class="button button--ghost" href="mailto:brakdakkie@gmail.com"
+          >Contact Us</a
+        >
+        <div class="ratings-container">
+          <div class="rating">
+            <a
+              href="https://www.tripadvisor.com/Hotel_Review-g469393-d2519506-Reviews-Brakdakkie_Prince_Albert-Prince_Albert_Prince_Albert_Municipality_Western_Cape.html"
+            >
+              <div class="rating__stars">
+                <img
+                  src="assets/img/4-half-stars.svg"
+                  alt="4.5 stars average rating"
+                />
+              </div>
+              <div class="rating__text">4.5 on Trip Advisor</div>
+            </a>
+          </div>
+
+          <div id="js__reviews-div" class="reviews reviews--shown">
+            <a
+              href="https://www.tripadvisor.com/ShowUserReviews-g469393-d2519506-r592805307-Brakdakkie_Prince_Albert-Prince_Albert_Prince_Albert_Municipality_Western_Cape.html"
+              id="js__review-link"
+            >
+              <div id="js__review-quote" class="reviews__quote">
+                A little place to call home.
+              </div>
+              <div id="js__review-credit" class="reviews__credit">
+                IloveCapeTown_9, July 2018
+              </div>
+            </a>
+          </div>
+          <!-- <a href="" id="review2__link" -->
+          <!--   ><div class="reviews review2"> -->
+          <!--     <div id="review2__quote" class="reviews__quote"></div> -->
+          <!--     <div id="review2__credit" class="reviews__credit"></div></div -->
+          <!-- ></a> -->
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="
+          page-footer
+          page-footer--fixed
+          page-footer--home
+          page-footer--light
+          page-footer--transparent
+        "
+      >
+        <div class="copyright">
+          © 2020 Brakdakkie Guest Cottages. <br class="small-screen" />All
+          Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script src="assets/js/mobile-menu.js"></script>
+    <script src="assets/js/reviews.js"></script>
+  </body>
+</html>

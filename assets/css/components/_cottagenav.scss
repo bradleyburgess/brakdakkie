@@ -1,0 +1,29 @@
+.cottages-nav {
+  @media screen and (min-width: 1300px) {
+    // border-top: 1px $gray3 solid;
+    // box-shadow: 0 0px 4px $gray1;
+  }
+  &__list {
+    &-item {
+      cursor: pointer;
+      background-color: $gray5;
+      color: $gray1;
+      border-radius: 20px 20px 0 0;
+      transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out,
+        box-shadow 0.1s ease-in-out;
+      &:hover {
+        background-color: $gray4;
+      }
+      &--active {
+        position: relative;
+        background-color: $gray6;
+        // -moz-box-shadow: 0px 0px 4px 1px $gray1;
+        // -webkit-box-shadow: 0px 0px 4px 1px $gray1;
+        // box-shadow: 0px 0px 4px 1px $gray1;
+        &:hover {
+          background-color: $gray6;
+        }
+      }
+    }
+  }
+}

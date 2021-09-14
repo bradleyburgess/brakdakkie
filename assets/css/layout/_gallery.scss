@@ -1,0 +1,69 @@
+// =========================================================================
+// GALLERY LAYOUT
+// =========================================================================
+
+/**********************/
+/*                    */
+/*   Mobile: Button   */
+/*                    */
+/**********************/
+
+.gallery__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 300px;
+  overflow-y: hidden;
+  @media screen and (min-width: 1000px) {
+    display: none;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+
+.gallery__title {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+/************************/
+/*                      */
+/*   Desktop: Collage   */
+/*                      */
+/************************/
+
+.cottage__gallery {
+  @media screen and (min-width: 1000px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.gallery__collage {
+  @media screen and (max-width: 999px) {
+    display: none;
+  }
+  box-sizing: border-box;
+  position: relative;
+  width: 943px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 120px);
+  grid-gap: 0.5rem;
+  img {
+    display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  img:nth-of-type(1) {
+    grid-area: 1 / 1 / 4 / 5;
+  }
+}

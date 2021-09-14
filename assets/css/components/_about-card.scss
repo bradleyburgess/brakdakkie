@@ -1,0 +1,130 @@
+// ====================================================
+// ABOUT CARD COMPONENT
+// ====================================================
+
+.about-card {
+  &--odd {
+    background-color: $gray1;
+    color: $gray6;
+  }
+  &--even {
+    background-color: $gray6;
+    color: $gray1;
+  }
+  &--final {
+    background-color: $gray6;
+    color: $gray1;
+  }
+
+  &__text {
+    padding: 1rem;
+    font-size: 1rem;
+    line-height: 1.7em;
+    @media screen and (min-width: 1000px) {
+      padding: 2rem;
+    }
+    // Hitting max desktop size: Space above headings
+    @media screen and (min-width: 1768px) {
+      margin-top: 3.5em;
+    }
+  }
+  &__heading {
+    font-family: $font-cursive;
+    font-size: 2.1rem;
+    line-height: 1.1em;
+    font-weight: normal;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 2.7rem;
+      margin-bottom: 0.8em;
+    }
+    .small-screen {
+      // One line when it can fit, until you reach iPad size
+      @media screen and (min-width: 510px) and (max-width: 767px) {
+        display: none;
+      }
+      // Fix for when display snaps at 1300px
+      @media screen and (min-width: 1300px) and (max-width: 1364px) {
+        display: none;
+      }
+    }
+  }
+  &__descr {
+    margin-top: 1.5em;
+    font-family: $font-serif;
+  }
+  &__list {
+    margin-top: 1em;
+    padding-left: 1.1em;
+    &-item {
+      a {
+        display: inline-block;
+        vertical-align: top;
+        transition: all 0.15s ease-out;
+      }
+      &:hover a {
+        padding-left: 0.85em;
+        color: $gray3;
+      }
+    }
+    &-item + li {
+      margin-top: 0.4em;
+    }
+  }
+
+  &__image {
+    @media screen and (min-width: 600px) and (max-width: 767px) {
+      // padding-top: 1rem;
+      padding: 0 1rem 1rem 1rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__news {
+    margin-top: 0; // Undo about-card__text margin above
+    h1 {
+      text-align: center;
+    }
+    &-title {
+      font-family: $font-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      text-transform: none;
+    }
+    &-source {
+      font-family: $font-sans;
+      font-weight: 400;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+    }
+  }
+
+  &__policies {
+    padding: 1rem 0;
+    @media screen and (min-width: 1000px) {
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+    }
+  }
+}
+
+.policies {
+  &__list {
+    padding: 0 1em 1em 1em;
+    font-size: 0.8rem;
+    &-item {
+      margin-left: 1rem;
+      & + li {
+        margin-top: 1em;
+      }
+    }
+  }
+}

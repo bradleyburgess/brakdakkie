@@ -1,0 +1,31 @@
+// =====================================================
+// BUTTON COMPONENTS
+// =====================================================
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0.6em;
+  font-family: $font-sans;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $gray1;
+  border: 2px solid;
+  @media screen and (min-width: 700px) {
+    font-size: 1.6rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 2rem;
+  }
+  &--ghost {
+    border-color: $gray6;
+    color: $gray6;
+    &:hover {
+      color: $gray3;
+      background-color: $gray6;
+      transition: color            0.15s ease-in-out,
+                  background-color 0.15s ease-in-out;
+    }
+  }
+}

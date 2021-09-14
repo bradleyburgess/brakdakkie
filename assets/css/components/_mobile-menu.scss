@@ -1,0 +1,68 @@
+// =============================================
+// MOBILE MENU
+// =============================================
+
+/* =========================================== */
+/*           1. LAYOUT                         */
+/* =========================================== */
+
+/* Mobile Menu Layout */
+
+.mobile-menu {
+  z-index: 1000;
+  position: relative;
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+  &__container {
+    box-sizing: content-box;
+    width: 30px;
+    margin: 0 3px;
+    padding: 0 3px;
+    z-index: 1000;
+  }
+
+  .mobile-menu__line {
+    height: 2px;
+    margin: 8px 0;
+  }
+}
+
+/* =========================================== */
+/*           2. STYLING                        */
+/* =========================================== */
+
+/* Mobile Menu Styling */
+
+.mobile-menu__line {
+  border-radius: 1px;
+  &--light {
+    background-color: $gray6;
+  }
+  &--dark {
+    background-color: $gray1;
+  }
+  &--clicked {
+    background-color: $gray6;
+  }
+}
+
+/* Menu animation */
+
+.mobile-menu__line {
+  transition-property: all;
+  transition-duration: 0.15s;
+  transition-timing-function: ease-in-out;
+}
+
+.mobile-menu__middle-bar.mobile-menu__line--clicked {
+  opacity: 0;
+}
+
+.mobile-menu__top-bar.mobile-menu__line--clicked {
+  transform: translateY(10px) rotate(-135deg);
+}
+
+.mobile-menu__bottom-bar.mobile-menu__line--clicked {
+  transform: translateY(-10px) rotate(135deg);
+}

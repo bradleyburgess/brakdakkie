@@ -1,0 +1,25 @@
+// ===============================================
+// HEADER LAYOUT
+// ===============================================
+
+.page-header {
+  position: fixed;
+  width: 100%;
+  height: $header-size;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 100;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media screen and (min-width: 1300px) {
+      width: 85vw;
+      max-width: 1500px;
+    }
+  }
+}

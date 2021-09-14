@@ -1,0 +1,104 @@
+// ========================================
+// HOME PAGE COMPONENTS
+// ========================================
+
+// Background
+
+// Components
+
+.jumbotext {
+  padding: 0 1em;
+  color: $gray6;
+  font-family: $font-serif;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  @media screen and (min-width: 700px) {
+    font-size: 2rem;
+    line-height: 1.6em;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 1800px) {
+    font-size: 2.9rem;
+  }
+  &--cursive {
+    font-family: $font-cursive;
+    position: relative;
+    font-size: 1.15em;
+    font-weight: normal;
+    bottom: 0.03em;
+  }
+  .small-screen {
+    @media screen and (min-width: 700px) {
+      display: none;
+    }
+  }
+  .medium-screen {
+    display: none;
+    @media screen and (min-width: 820px) {
+      display: initial;
+    }
+  }
+}
+
+.rating {
+  font-family: $font-sans;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: $gray6;
+  &__stars {
+    height: 1.5em;
+    width: auto;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  &__text {
+    padding-top: 0.2em;
+  }
+}
+
+.reviews {
+  font-family: $font-serif;
+  font-size: 1rem;
+  text-align: center;
+  color: $gray6;
+  @media screen and (min-width: 700px) {
+    font-size: 1.2rem;
+  }
+  &__quote {
+    font-size: 1em;
+    font-weight: bold;
+    max-width: 400px;
+    &::before {
+      content: "\201C";
+    }
+    &::after {
+      content: "\201D";
+    }
+  }
+  &__credit {
+    font-size: 0.8em;
+    margin-top: 0.2em;
+    &::before {
+      content: "\2014\0020";
+    }
+  }
+}
+
+// JS changer
+.reviews {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  &--shown {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+}

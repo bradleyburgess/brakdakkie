@@ -1,0 +1,26 @@
+// ===========================================================================
+// SELECT COMPONENT
+// ===========================================================================
+
+.cottages-select {
+  background-color: $gray6;
+  border-color: $gray3;
+  color: $gray1;
+  &__item {
+    background-color: $gray6;
+    &:hover {
+      background-color: $gray4;
+    }
+  }
+}
+
+// Change cottage cards on selection
+.cottage--2,
+.cottage--3,
+.cottage--4 {
+  display: none;
+  opacity: 0;
+}
+// .cottage {
+//   transition: opacity 0.15s ease-in-out;
+// }

@@ -1,0 +1,13 @@
+// ========================================
+// PAGE LAYOUT
+// ========================================
+
+.page-wrapper {
+  &--home {
+    height: calc(100% - #{$header-size});
+  }
+  &--contact {
+    height: calc(100% - #{$header-size});
+  }
+}
+

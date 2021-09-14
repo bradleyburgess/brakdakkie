@@ -1,0 +1,38 @@
+// ========================================
+// BACKGROUND COMPONENT
+// ========================================
+
+.page-background {
+  &__image {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &--home {
+      background-image: url("../../assets/img/cottage4-bed.jpg");
+      background-position: 45%;
+    }
+    &--contact {
+      background-image: url("../../assets/img/typewriter.jpg");
+      background-position: 30%;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: $gray1;
+    opacity: 0.6;
+  }
+  &--light {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: $gray5;
+  }
+}

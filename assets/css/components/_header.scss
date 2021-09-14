@@ -1,0 +1,18 @@
+// ====================================================
+// PAGE HEADER COMPONENTS
+// ====================================================
+
+.page-header {
+  &--transparent {
+    background-color: none;
+  }
+  &--light {
+    background-color: $gray6;
+    box-shadow: 0 0px 4px $gray1
+  }
+  &__wrapper {
+    &--light {
+      background-color: $gray6;
+    }
+  }
+}

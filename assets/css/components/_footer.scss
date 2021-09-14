@@ -1,0 +1,38 @@
+// =====================================================
+// FOOTER COMPONENTS
+// =====================================================
+
+.page-footer {
+  padding-bottom: 1em;
+  padding-top: 1em;
+  font-family: $font-sans;
+  font-size: 0.7rem;
+  text-align: center;
+  text-transform: uppercase;
+  &--dark {
+    color: $gray1;
+    background-color: $gray6;
+  }
+  &--light {
+    color: $gray6;
+    background-color: $gray1;
+  }
+  &--transparent {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 0.7rem;
+  }
+
+  &__contact {
+    margin-bottom: 1.5em;
+  }
+
+  .copyright {
+    .small-screen {
+      @media screen and (min-width: 411px) {
+        display: none;
+      }
+    }
+  }
+}

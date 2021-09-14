@@ -1,5 +1,0 @@
-export { Container } from "./Container"
-export { Quotes } from "./Quotes"
-export { Rating } from "./Rating"
-export { Reviews } from "./Reviews"
-export { SiteTagLine } from "./SiteTagLine"

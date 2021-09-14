@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" /> -->
+    <meta
+      name="viewport"
+      content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no"
+    />
+    <title>Brakdakkie Guest Cottages | Cottages</title>
+    <!-- Google Fonts import -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="../assets/css/vendors/photoswipe.css" />
+    <link rel="stylesheet" href="../assets/css/vendors/default-skin.css" />
+
+    <!-- Brakdakkie CSS -->
+    <link rel="stylesheet" href="../assets/css/main.css?ver=0.3" />
+  </head>
+  <body>
+    <div class="page-background--light"></div>
+
+    <div class="page-wrapper page-wrapper--cottages">
+      <header class="page-header page-header--light">
+        <div class="page-header__wrapper page-header__wrapper--light">
+          <div class="branding">
+            <a href="../">
+              <img
+                class="branding__logo"
+                src="../assets/img/brakdakkie-dark.svg"
+                alt="Brakdakkie Guest Cottages"
+              />
+            </a>
+          </div>
+
+          <nav class="desktop-nav desktop-nav--dark">
+            <ul class="desktop-nav__list">
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="../about/">About</a>
+              </li>
+              <li
+                class="desktop-nav__list-item desktop-nav__list-item desktop-nav__list-item--active"
+              >
+                <a href="#">Cottages</a>
+              </li>
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="../rates/">Rates</a>
+              </li>
+              <li class="desktop-nav__list-item desktop-nav__list-item">
+                <a href="../contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Mobile Nav Menu -->
+          <nav class="mobile-nav mobile-nav--light">
+            <div class="mobile-nav__title">
+              <a href="../">Brakdakkie <br />Guest Cottages</a>
+            </div>
+            <ul class="mobile-nav__list">
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="../about/">About</a>
+              </li>
+              <li
+                class="mobile-nav__list-item mobile-nav__list-item mobile-nav__list-item--active"
+              >
+                <a href="#">Cottages</a>
+              </li>
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="../rates/">Rates</a>
+              </li>
+              <li class="mobile-nav__list-item mobile-nav__list-item">
+                <a href="../contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-menu">
+            <div class="mobile-menu__container">
+              <div
+                class="mobile-menu__line mobile-menu__line--dark mobile-menu__top-bar"
+              ></div>
+              <div
+                class="mobile-menu__line mobile-menu__line--dark mobile-menu__middle-bar"
+              ></div>
+              <div
+                class="mobile-menu__line mobile-menu__line--dark mobile-menu__bottom-bar"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <!-- Main -->
+      <main class="main-content main-content--cottages">
+        <div class="main-content__wrapper">
+          <nav class="cottages-nav">
+            <ul class="cottages-nav__list">
+              <li
+                class="cottages-nav__list-item cottages-nav__list-item--active"
+                data-cottage="cottage1"
+              >
+                Cottage 1
+              </li>
+              <li class="cottages-nav__list-item" data-cottage="cottage2">
+                Cottage 2
+              </li>
+              <li class="cottages-nav__list-item" data-cottage="cottage3">
+                Cottage 3
+              </li>
+              <li class="cottages-nav__list-item" data-cottage="cottage4">
+                Cottage 4
+              </li>
+            </ul>
+
+            <select
+              name="cottages-select"
+              id="cottages-select"
+              class="cottages-select"
+            >
+              <option value="cottage1" class="cottages-select__item"
+                >Cottage 1</option
+              >
+              <option value="cottage2" class="cottages-select__item"
+                >Cottage 2</option
+              >
+              <option value="cottage3" class="cottages-select__item"
+                >Cottage 3</option
+              >
+              <option value="cottage4" class="cottages-select__item"
+                >Cottage 4</option
+              >
+            </select>
+          </nav>
+
+          <div class="cottage cottage--1">
+            <section class="cottage-card cottage__gallery">
+              <div class="gallery__button cottage1__button">
+                <img src="../assets/img/cottage1-bed.jpg" alt="" />
+                <div class="gallery__title">
+                  <h2>Cottage 1</h2>
+                  <h3>Click for Gallery</h3>
+                </div>
+              </div>
+              <div class="gallery__collage cottage1__collage">
+                <img
+                  src="../assets/img/cottage1-bed.jpg"
+                  alt="Cottage 1 Bedroom"
+                  class="gallery1__pic"
+                  data-index="0"
+                />
+                <img
+                  src="../assets/img/cottage1-bath1.jpg"
+                  alt="Cottage 1 Bathroom"
+                  class="gallery1__pic"
+                  data-index="1"
+                />
+                <img
+                  src="../assets/img/cottage1-bath2.jpg"
+                  alt="Cottage 1 Bathroom"
+                  class="gallery1__pic"
+                  data-index="2"
+                />
+                <img
+                  src="../assets/img/cottage1-kitchen1.jpg"
+                  alt="Cottage 1 Kitchen"
+                  class="gallery1__pic"
+                  data-index="3"
+                />
+                <img
+                  src="../assets/img/cottage1-kitchen2.jpg"
+                  alt="Cottage 1 Kitchen"
+                  class="gallery1__pic"
+                  data-index="4"
+                />
+                <img
+                  src="../assets/img/cottage1-outside.jpg"
+                  alt="Cottage 1 Outside view"
+                  class="gallery1__pic"
+                  data-index="5"
+                />
+              </div>
+            </section>
+            <section class="cottage-card cottage__descr">
+              <div class="cottage__header">
+                <h3 class="cottage__number">Cottage 1</h3>
+                <h1 class="cottage__name">&ldquo;Oupa&rdquo;, the barn</h1>
+                <p>Originally the barn of the farm, this cottage features:</p>
+              </div>
+              <div class="cottage__lists">
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    double bed with crisp, white linen
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    en-suite bathroom with luxurious Victorian bath, towels,
+                    shower gel and shampoo
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    kitchenette with a fridge, microwave, 2-plate stove, kettle,
+                    toaster, cutlery, crockery and a dining table
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    coffee, tea, rusks, milk and sugar supplied
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    breakfast supplies of muesli, yoghurt, seasonal fruit,
+                    muffins and milk
+                  </li>
+                </ul>
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    private enclosed lawned garden with a splash pool
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    private braai area with a table and chairs
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    secure, covered parking
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    electric blankets, panel heater, hot water bottles and extra
+                    blankets for winter
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    fan and mosquito repellents for summer
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    an extra mattress for children is available at no charge
+                  </li>
+                </ul>
+              </div>
+              <div class="cottage__button">
+                <a
+                  href="https://www.airbnb.com/rooms/17351809"
+                  class="button button--ghost"
+                  >Book Now</a
+                >
+              </div>
+            </section>
+            <section class="cottage-card cottage__rates">
+              <div class="cottage__ratestext">
+                <h2 class="cottage__ratesheading">Cottage 1 Rates</h2>
+                <div class="cottage__indivrates cottage__indivrates1">
+                  <h3>One Night</h3>
+                  <p>
+                    R 820 total, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 890 total, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <div class="cottage__indivrates cottage__indivrates2">
+                  <h3>Two Nights</h3>
+                  <p>
+                    R 725 per night, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 790 per night, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <p class="cottage__breakfast">
+                  B&B option includes a light continental breakfast. Extra
+                  mattress available at no extra fee.
+                </p>
+              </div>
+              <div class="cottage__ratesimage">
+                <img src="../assets/img/decoration1.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+
+          <div class="cottage cottage--2">
+            <section class="cottage-card cottage__gallery">
+              <div class="gallery__button cottage2__button">
+                <img src="../assets/img/cottage2-bed.jpg" alt="" />
+                <div class="gallery__title">
+                  <h2>Cottage 2</h2>
+                  <h3>Click for Gallery</h3>
+                </div>
+              </div>
+              <div class="gallery__collage cottage2__collage">
+                <img
+                  src="../assets/img/cottage2-bed.jpg"
+                  alt="Cottage 2 Bedroom"
+                  class="gallery2__pic"
+                  data-index="0"
+                />
+                <img
+                  src="../assets/img/cottage2-bath1.jpg"
+                  alt="Cottage 2 Bathroom"
+                  class="gallery2__pic"
+                  data-index="1"
+                />
+                <img
+                  src="../assets/img/cottage2-bath2.jpg"
+                  alt="Cottage 2 Bathroom"
+                  class="gallery2__pic"
+                  data-index="2"
+                />
+                <img
+                  src="../assets/img/cottage2-living1.jpg"
+                  alt="Cottage 2 Living Space"
+                  class="gallery2__pic"
+                  data-index="3"
+                />
+                <img
+                  src="../assets/img/cottage2-living2.jpg"
+                  alt="Cottage 2 Living Space"
+                  class="gallery2__pic"
+                  data-index="4"
+                />
+              </div>
+            </section>
+            <section class="cottage-card cottage__descr">
+              <div class="cottage__header">
+                <h3 class="cottage__number">Cottage 1</h3>
+                <h1 class="cottage__name">&ldquo;Ouma&rdquo;, the dairy</h1>
+                <p>Originally the dairy of the farm, this cottage features:</p>
+              </div>
+              <div class="cottage__lists">
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    twin beds which can be converted into a king-sized bed with
+                    white linen
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    accommodation for two singles or one couple
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    en-suite bathroom with a large shower, towels, shower gel
+                    and shampoo
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    kitchenette with a fridge, kettle, toaster, cutlery,
+                    crockery and dining table
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    coffee, tea, sugar and rusks provided
+                  </li>
+                </ul>
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    breakfast supplies of muesli, yoghurt, seasonal fruit,
+                    muffins and milk
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    private enclosed patio with splash pool
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    braai/barbecue area with table and chairs
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    panel heater, hot water bottles and extra blankets for
+                    winter
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    fan and mosquito repellents for summer
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    secure, off-street parking
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    extra mattress and bedding are available for children at no
+                    extra cost
+                  </li>
+                </ul>
+              </div>
+              <div class="cottage__button">
+                <a
+                  href="https://www.airbnb.com/rooms/17354807"
+                  class="button button--ghost"
+                  >Book Now</a
+                >
+              </div>
+            </section>
+            <section class="cottage-card cottage__rates">
+              <div class="cottage__ratestext">
+                <h2 class="cottage__ratesheading">Cottage 2 Rates</h2>
+                <div class="cottage__indivrates cottage__indivrates1">
+                  <h3>One Night</h3>
+                  <p>
+                    R 820 total, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 890 total, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <div class="cottage__indivrates cottage__indivrates2">
+                  <h3>Two Nights</h3>
+                  <p>
+                    R 725 per night, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 790 per night, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <p class="cottage__breakfast">
+                  B&B option includes a light continental breakfast. Extra
+                  mattress available at no extra fee.
+                </p>
+              </div>
+              <div class="cottage__ratesimage">
+                <img src="../assets/img/decoration1.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+
+          <div class="cottage cottage--3">
+            <section class="cottage-card cottage__gallery">
+              <div class="gallery__button cottage3__button">
+                <img src="../assets/img/cottage3-bed.jpg" alt="" />
+                <div class="gallery__title">
+                  <h2>Cottage 3</h2>
+                  <h3>Click for Gallery</h3>
+                </div>
+              </div>
+              <div class="gallery__collage cottage3__collage">
+                <img
+                  src="../assets/img/cottage3-bed.jpg"
+                  alt="Cottage 3 Bedroom"
+                  class="gallery3__pic"
+                  data-index="0"
+                />
+                <img
+                  src="../assets/img/cottage3-bath.jpg"
+                  alt="Cottage 3 Bathroom"
+                  class="gallery3__pic"
+                  data-index="1"
+                />
+                <img
+                  src="../assets/img/cottage3-kitchen.jpg"
+                  alt="Cottage 3 Kitchen"
+                  class="gallery3__pic"
+                  data-index="2"
+                />
+                <img
+                  src="../assets/img/cottage3-nook.jpg"
+                  alt="Cottage 3 Nook"
+                  class="gallery3__pic"
+                  data-index="3"
+                />
+                <img
+                  src="../assets/img/cottage3-outside.jpg"
+                  alt="Cottage 3 Kitchen"
+                  class="gallery3__pic"
+                  data-index="4"
+                />
+              </div>
+            </section>
+            <section class="cottage-card cottage__descr">
+              <div class="cottage__header">
+                <h3 class="cottage__number">Cottage 1</h3>
+                <h1 class="cottage__name">&ldquo;Esmarelda&rdquo;, the shed</h1>
+                <p>
+                  Originally the donkey shed of the farm, this cottage features:
+                </p>
+              </div>
+              <div class="cottage__lists">
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    double bed and two single beds which in an open plan
+                    sleeping arrangement with white linen
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    suitable for a family of two adults and two children
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    en-suite bathroom with a large shower, towels, shower gel
+                    and shampoo
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    kitchenette with a fridge, kettle, toaster, cutlery,
+                    crockery and dining table
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    coffee , tea, sugar and rusks supplied
+                  </li>
+                </ul>
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    breakfast supplies of muesli, yoghurt, seasonal fruit,
+                    muffins & milk
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    private patio with splash pool
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    braai/barbecue area with outside table and chairs
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    secure, off-street parking
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    panel heater, hot water bottles and extra blankets for
+                    winter
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    fan and mosquito repellents for summer
+                  </li>
+                </ul>
+              </div>
+              <div class="cottage__button">
+                <a
+                  href="https://www.airbnb.com/rooms/17264630"
+                  class="button button--ghost"
+                  >Book Now</a
+                >
+              </div>
+            </section>
+            <section class="cottage-card cottage__rates">
+              <div class="cottage__ratestext">
+                <h2 class="cottage__ratesheading">Cottage 3 Rates</h2>
+                <h3 class="cottage__ratessubheading">Minimum Two Nights</h3>
+                <div class="cottage__indivrates cottage__indivrates1">
+                  <h3>One Night</h3>
+                  <p>
+                    R 820 total, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 890 total, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <div class="cottage__indivrates cottage__indivrates2">
+                  <h3>Two Nights</h3>
+                  <p>
+                    R 725 per night, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 790 per night, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <p class="cottage__breakfast">
+                  B&B option includes a light continental breakfast. Extra
+                  mattress available at no extra fee.
+                </p>
+              </div>
+              <div class="cottage__ratesimage">
+                <img src="../assets/img/decoration1.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+
+          <div class="cottage cottage--4">
+            <section class="cottage-card cottage__gallery">
+              <div class="gallery__button cottage4__button">
+                <img src="../assets/img/cottage4-bed.jpg" alt="" />
+                <div class="gallery__title">
+                  <h2>Cottage 4</h2>
+                  <h3>Click for Gallery</h3>
+                </div>
+              </div>
+              <div class="gallery__collage cottage4__collage">
+                <img
+                  src="../assets/img/cottage4-bed.jpg"
+                  alt="Cottage 4 Bedroom"
+                  class="gallery4__pic"
+                  data-index="0"
+                />
+                <img
+                  src="../assets/img/cottage4-bath1.jpg"
+                  alt="Cottage 4 Bathroom"
+                  class="gallery4__pic"
+                  data-index="1"
+                />
+                <img
+                  src="../assets/img/cottage4-bath2.jpg"
+                  alt="Cottage 4 Bathroom"
+                  class="gallery4__pic"
+                  data-index="2"
+                />
+                <img
+                  src="../assets/img/cottage4-kitchen1.jpg"
+                  alt="Cottage 4 Kitchen"
+                  class="gallery4__pic"
+                  data-index="3"
+                />
+                <img
+                  src="../assets/img/cottage4-kitchen2.jpg"
+                  alt="Cottage 4 Kitchen"
+                  class="gallery4__pic"
+                  data-index="4"
+                />
+                <img
+                  src="../assets/img/cottage4-outside.jpg"
+                  alt="Cottage 4 Outside View"
+                  class="gallery4__pic"
+                  data-index="5"
+                />
+              </div>
+            </section>
+            <section class="cottage-card cottage__descr">
+              <div class="cottage__header">
+                <h3 class="cottage__number">Cottage 1</h3>
+                <h1 class="cottage__name">&ldquo;Slootjie&rdquo;</h1>
+                <p>
+                  Tucked in a cosy corner, <em>“Slootjie”</em> is named after
+                  the leiwater sloot that runs through the private garden. This
+                  cottage has been converted into one of our luxury suites, and
+                  features:
+                </p>
+              </div>
+              <div class="cottage__lists">
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    double bed with white linen
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    en-suite bathroom with a shower, towels, shower gel &
+                    shampoo are provided
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    kitchenette with a fridge, kettle, toaster, microwave and
+                    dining table
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    tea, sugar, coffee and rusks are supplied
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    breakfast supplies of muesli, yoghurt, seasonal fruit,
+                    muffins & milk
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    private patio with splash pool
+                  </li>
+                </ul>
+                <ul class="cottage__descrlist">
+                  <li class="cottage__descrlist-item">
+                    braai/barbecue area with outside table and chairs
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    panel heater, hot water bottles and extra blankets for
+                    winter
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    fan and mosquito repellents for summer
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    secure, off-street parking
+                  </li>
+                  <li class="cottage__descrlist-item">
+                    extra mattress and bedding are available for children at no
+                    extra cost
+                  </li>
+                </ul>
+              </div>
+              <div class="cottage__button">
+                <a
+                  href="https://www.airbnb.com/rooms/17266394"
+                  class="button button--ghost"
+                  >Book Now</a
+                >
+              </div>
+            </section>
+            <section class="cottage-card cottage__rates">
+              <div class="cottage__ratestext">
+                <h2 class="cottage__ratesheading">Cottage 4 Rates</h2>
+                <div class="cottage__indivrates cottage__indivrates1">
+                  <h3>One Night</h3>
+                  <p>
+                    R 820 total, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 890 total, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <div class="cottage__indivrates cottage__indivrates2">
+                  <h3>Two Nights</h3>
+                  <p>
+                    R 725 per night, <br />
+                    self catering
+                  </p>
+                  <p>
+                    R 790 per night, <br />
+                    bed & breakfast
+                  </p>
+                </div>
+                <p class="cottage__breakfast">
+                  B&B option includes a light continental breakfast. Extra
+                  mattress available at no extra fee.
+                </p>
+              </div>
+              <div class="cottage__ratesimage">
+                <img src="../assets/img/decoration1.jpg" alt="" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer page-footer--cottages page-footer--light">
+        <div class="page-footer__contact">
+          <p>
+            Brakdakkie Guest Cottages <br />
+            12 Sonskyn Street <br />Prince Albert, South Africa <br />
+            <a href="tel:+27835614966">083 561 4966</a> <br />
+            <a href="mailto:brakdakkie@gmail.com">brakdakkie@gmail.com</a>
+          </p>
+        </div>
+        <div class="copyright">
+          © 2020 Brakdakkie Guest Cottages. <br class="small-screen" />All
+          Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe. 
+                     It's a separate element as animating opacity 
+                     is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+                       PhotoSwipe keeps only 3 of them in the DOM to 
+                       save memory. Don't modify these 3 pswp__item elements, 
+                       data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button
+              class="pswp__button pswp__button--close"
+              title="Close (Esc)"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--share"
+              title="Share"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--fs"
+              title="Toggle fullscreen"
+            ></button>
+
+            <button
+              class="pswp__button pswp__button--zoom"
+              title="Zoom in/out"
+            ></button>
+
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"
+          >
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button
+            class="pswp__button pswp__button--arrow--left"
+            title="Previous (arrow left)"
+          ></button>
+
+          <button
+            class="pswp__button pswp__button--arrow--right"
+            title="Next (arrow right)"
+          ></button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Brakdakkie JS -->
+    <script src="../assets/js/mobile-menu.js?v=0.5"></script>
+    <script src="../assets/js/accordion.js"></script>
+
+    <!-- PhotoSwipe JS -->
+    <script src="../assets/js/photoswipe.min.js"></script>
+    <script src="../assets/js/photoswipe-ui-default.min.js"></script>
+    <script src="../assets/js/galleries.js"></script>
+    <script src="../assets/js/select.js"></script>
+  </body>
+</html>

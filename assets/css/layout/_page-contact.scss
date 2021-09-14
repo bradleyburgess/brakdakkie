@@ -1,0 +1,49 @@
+// =====================================================================
+// CONTACT LAYOUT
+// =====================================================================
+
+.contact__heading {
+  @media screen and (min-width: 1000px) {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+}
+
+.contact__subheading {
+  .small-screen {
+    display: none;
+    @media screen and (min-width: 1000px) {
+      display: initial;
+    }
+  }
+}
+
+.contact__info {
+  @media screen and (min-width: 1000px) {
+    grid-area: 2 / 1 / 3 / 2;
+    align-self: start;
+    justify-self: center;
+  }
+  @media screen and (min-width: 1350px) {
+    justify-self: end;
+    align-self: start;
+    margin-right: 227px;
+  }
+}
+
+.map {
+  display: none;
+  @media screen and (min-width: 375px) {
+    display: initial;
+  }
+  @media screen and (min-width: 1000px) {
+    grid-area: 2 / 2 / 3 / 3;
+    align-self: start;
+    justify-self: center;
+    display: initial;
+  }
+  @media screen and (min-width: 1350px) {
+    justify-self: start;
+    align-self: start;
+    margin-left: 227px;
+  }
+}

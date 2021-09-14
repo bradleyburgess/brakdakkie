@@ -1,0 +1,45 @@
+html {
+  // set base font size
+  font-size: 1rem;
+
+  // fallback font
+
+  // adjust size for larger display
+  @media screen and (min-width: 750px) {
+    // font-size: 1.1rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 1.1rem;
+  }
+
+  // no horizontal scrolling
+  overflow-x: hidden;
+}
+
+// sane defaults for links
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// fallback font stylings:
+
+body {
+  font-family: $font-serif;
+}
+h1 {
+  font-family: $font-cursive;
+  font-weight: normal;
+}
+h2,
+h3,
+h4 {
+  font-family: $font-sans;
+  font-weight: normal;
+  text-transform: uppercase;
+}
