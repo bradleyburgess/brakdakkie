@@ -4,6 +4,8 @@ import Layout from "../components/Layout";
 import { Grid, Image, Text } from "../components/Rates";
 import ReactMd from "react-markdown";
 import { SEO } from "../components/SEO";
+import { ButtonContainer, Button } from "../components/Button";
+import theme from "../styles/theme"
 
 const RatesPage = ({ rates, image }: Props) => {
   return (
@@ -26,6 +28,16 @@ const RatesPage = ({ rates, image }: Props) => {
               children={rates.find((e) => e.cottage === "three").rate}
               components={{ h2: "h2", h3: "h2", h4: "h2", h5: "h2", h6: "h2" }}
             />
+          </div>
+          <div style={{ backgroundColor: theme.colors.gray1 }}>
+            <ButtonContainer>
+              <Button
+                href="https://book.nightsbridge.com/32234"
+                target="_blank"
+              >
+                Book Now
+              </Button>
+            </ButtonContainer>
           </div>
         </Text>
       </Grid>

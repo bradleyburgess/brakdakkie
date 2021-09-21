@@ -2,11 +2,13 @@ import styled from "styled-components";
 import { Link } from "gatsby";
 import theme from "../styles/theme";
 
-const Button = ({ href, children }: Props) => {
+export const Button = ({ href, children, target }: Props) => {
   return href.startsWith("/") ? (
     <StyledLink to={href}>{children}</StyledLink>
   ) : (
-    <StyledA href={href}>{children}</StyledA>
+    <StyledA href={href} target={target ? target : null}>
+      {children}
+    </StyledA>
   );
 };
 
@@ -70,6 +72,7 @@ export const ButtonContainer = styled.div`
 interface Props {
   href: string;
   children: React.ReactNode | React.ReactNode[];
+  target?: "_blank" | undefined;
   // variant: ButtonVariant;
 }
 
