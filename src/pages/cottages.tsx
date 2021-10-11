@@ -43,7 +43,12 @@ function CottagesPage({ cottages, featuredImage }: Props) {
         <Heading>{cottage.heading}</Heading>
         <Description content={cottage.description} />
         <ButtonContainer>
-          <Button href={cottage.bookingLink}>Book Now</Button>
+          <Button
+            href={cottage.bookingLink || "/contact"}
+            target={cottage.bookingLink ? "_blank" : null}
+          >
+            {cottage.bookingLink ? "Book Now" : "Contact Us"}
+          </Button>
         </ButtonContainer>
       </Card>
       <RatesCard

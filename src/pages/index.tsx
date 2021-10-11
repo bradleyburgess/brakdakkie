@@ -58,7 +58,7 @@ const HomePage = ({ data }) => {
             p: ({ children }) => <SiteTagLine>{children}</SiteTagLine>,
           }}
         />
-        <Button href="https://book.nightsbridge.com/32234" target="_blank">Book Now</Button>
+        <Button href="/contact">Contact Us</Button>
         <Reviews />
       </Container>
     </Layout>
