@@ -1,9 +1,5 @@
-import loadable from "@loadable/component";
-const Fade = loadable(() => import("react-awesome-reveal"), {
-  resolveComponent: (components) => components.Fade,
-});
 import Layout from "../components/Layout";
-// import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import { graphql, useStaticQuery } from "gatsby";
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
 import ReactMarkdown from "react-markdown";
@@ -23,7 +19,7 @@ import {
 import Logo from "../assets/brakdakkie-logo1.svg";
 import { Rotate } from "react-awesome-reveal";
 import { sanitize } from "../util/functions";
-import { SEO } from "../components/SEO";
+import {SEO} from "../components/SEO";
 
 export default function AboutPage() {
   const data = useStaticQuery(graphql`
@@ -93,7 +89,9 @@ export default function AboutPage() {
   );
 
   return (
-    <Layout footerElements={["address", "email", "phone", "copyright"]}>
+    <Layout
+      footerElements={["address", "email", "phone", "copyright"]}
+    >
       <SEO pageTitle="about" />
       <Rotate delay={200} triggerOnce>
         <LogoContainer>
