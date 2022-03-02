@@ -101,7 +101,11 @@ export default function CottagesPageWithQuery() {
         featuredImage {
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                placeholder: TRACED_SVG
+                formats: [AUTO, WEBP, AVIF]
+              )
               original {
                 src
               }

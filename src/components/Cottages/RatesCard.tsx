@@ -19,6 +19,7 @@ export const RatesCard = ({ number, rate, featuredImage }: Props) => {
           image={featuredImage.full}
           alt={featuredImage.description}
           title={featuredImage.description}
+          loading="lazy"
         />
       </DesktopImageConatainer>
       <DesktopTextContainer>
