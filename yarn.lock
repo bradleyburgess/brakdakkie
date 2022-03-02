@@ -5995,10 +5995,10 @@ gatsby-plugin-react-svg@^3.1.0:
   dependencies:
     svg-react-loader "^0.4.6"
 
-gatsby-plugin-sharp@^4.8.1:
-  version "4.8.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.8.1.tgz#726a3d0fe4da4c214934b2e891d5c7e8f79e85a2"
-  integrity sha512-qevtUQT9TJpv9OGzGr7XKPjRyhJyDn/G5yFGCHr8kf+7EZBeD4TYn6oy2/34Olv7ckn+DcH4pjdK8sxhi45lJw==
+gatsby-plugin-sharp@^4.9.0:
+  version "4.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-4.9.0.tgz#c1370d00d55e025d2e5d1d9b3017865ea9d890c7"
+  integrity sha512-65JcqL11kyecTDYl3uZ/SvBI2FRJgSC7JTxzoV1ZOJkNQpn4nRLRUFL5UTijnnwU9+tba3i6gxKtZEAlE94pcA==
   dependencies:
     "@babel/runtime" "^7.15.4"
     async "^3.2.3"
@@ -6006,9 +6006,9 @@ gatsby-plugin-sharp@^4.8.1:
     debug "^4.3.3"
     filenamify "^4.3.0"
     fs-extra "^10.0.0"
-    gatsby-core-utils "^3.8.1"
-    gatsby-plugin-utils "^3.2.0"
-    gatsby-telemetry "^3.8.1"
+    gatsby-core-utils "^3.9.0"
+    gatsby-plugin-utils "^3.3.0"
+    gatsby-telemetry "^3.9.0"
     got "^11.8.3"
     lodash "^4.17.21"
     mini-svg-data-uri "^1.4.3"
@@ -6040,7 +6040,7 @@ gatsby-plugin-typescript@^4.9.0:
     "@babel/runtime" "^7.15.4"
     babel-plugin-remove-graphql-queries "^4.9.0"
 
-gatsby-plugin-utils@^3.2.0, gatsby-plugin-utils@^3.3.0:
+gatsby-plugin-utils@^3.3.0:
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-utils/-/gatsby-plugin-utils-3.3.0.tgz#f37dac15f381acf876eaef94636d41f7671b0604"
   integrity sha512-wmwSQ/IMVQ8lII015IRToeXzu4LsRayKhlrBpuCbzJJgzBEgTH5ezHkGnxAGKvMn7xP9Oekz6DX/XYwUnAe4ug==
@@ -6121,7 +6121,7 @@ gatsby-source-graphcms@^2.8.0:
     he "1.2.0"
     node-fetch "2.6.1"
 
-gatsby-telemetry@^3.8.1, gatsby-telemetry@^3.9.0:
+gatsby-telemetry@^3.9.0:
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-3.9.0.tgz#d438841a6351ab1fd02c71244cdf78350694f070"
   integrity sha512-ifqJ4KS16mbpfZ5oVaU4WEbk6gccivVqjCbzfVGgqtl+C8B0u1CeShvr4NcJE1FdVFYIOB4uJeV9Wym03B075A==
