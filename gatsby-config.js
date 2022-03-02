@@ -46,6 +46,11 @@ module.exports = {
         },
       },
     },
-    "gatsby-plugin-webpack-bundle-analyser-v2",
+    {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        disable: process.env.ANALYZE !== "true",
+      },
+    },
   ],
 };

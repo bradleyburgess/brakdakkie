@@ -79,6 +79,7 @@ export default function CottagesPageWithQuery() {
                   width: 270
                   height: 270
                   placeholder: BLURRED
+                  formats: [AUTO, WEBP, AVIF]
                 )
                 full: gatsbyImageData(layout: FULL_WIDTH)
               }
@@ -101,7 +102,11 @@ export default function CottagesPageWithQuery() {
         featuredImage {
           localFile {
             childImageSharp {
-              gatsbyImageData
+              gatsbyImageData(
+                layout: FULL_WIDTH
+                formats: [AUTO, WEBP, AVIF]
+                placeholder: TRACED_SVG
+              )
               original {
                 src
               }

@@ -12,6 +12,7 @@
     "dev-m": "gatsby develop -H $HOSTNAME -p 8000",
     "start": "gatsby develop",
     "build": "gatsby build",
+    "analyze": "cross-env ANALYZE=true gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
@@ -20,6 +21,7 @@
     "@fontsource/kaushan-script": "^4.5.2",
     "@fontsource/noto-serif": "^4.5.4",
     "@fontsource/open-sans": "^4.5.5",
+    "cross-env": "^7.0.3",
     "gatsby": "^4.9.0",
     "gatsby-plugin-image": "^2.9.0",
     "gatsby-plugin-netlify": "^4.1.0",
