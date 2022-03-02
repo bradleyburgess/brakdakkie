@@ -5,7 +5,7 @@ import { Grid, Image, Text } from "../components/Rates";
 import ReactMd from "react-markdown";
 import { SEO } from "../components/SEO";
 import { ButtonContainer, Button } from "../components/Button";
-import theme from "../styles/theme"
+import theme from "../styles/theme";
 
 const RatesPage = ({ rates, image }: Props) => {
   return (
@@ -67,7 +67,6 @@ export default function RatesPageWithQuery() {
       }
     }
   `);
-  console.log(data);
   const rates: Rate[] = data.allGraphCmsRate.nodes.map((node: GraphQlRate) => ({
     cottage: node.cottage,
     rate: node.rate.markdown,
