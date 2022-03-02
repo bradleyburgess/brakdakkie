@@ -4,8 +4,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "Brakdakkie",
+    siteUrl: "https://brakdakkie.co.za",
+    title: "Brakdakkie Guest Cottages",
   },
   plugins: [
     "gatsby-plugin-styled-components",
