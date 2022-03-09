@@ -30,7 +30,7 @@
     "gatsby-plugin-react-svg": "^3.1.0",
     "gatsby-plugin-sharp": "^4.9.0",
     "gatsby-plugin-styled-components": "^5.9.0",
-    "gatsby-source-filesystem": "^4.9.0",
+    "gatsby-source-filesystem": "^4.9.1",
     "gatsby-source-graphcms": "^2.8.0",
     "gatsby-transformer-sharp": "^4.9.0",
     "normalize.css": "^8.0.1",
