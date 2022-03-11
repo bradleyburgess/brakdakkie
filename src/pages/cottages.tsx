@@ -76,6 +76,7 @@ export default function CottagesPageWithQuery() {
             localFile {
               childImageSharp {
                 thumb: gatsbyImageData(
+                  layout: FIXED
                   width: 270
                   height: 270
                   placeholder: BLURRED
@@ -103,6 +104,7 @@ export default function CottagesPageWithQuery() {
           localFile {
             childImageSharp {
               gatsbyImageData(
+                layout: FULL_WIDTH
                 formats: [AUTO, WEBP, AVIF]
                 placeholder: TRACED_SVG
               )
