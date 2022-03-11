@@ -103,7 +103,6 @@ export default function CottagesPageWithQuery() {
           localFile {
             childImageSharp {
               gatsbyImageData(
-                layout: FULL_WIDTH
                 formats: [AUTO, WEBP, AVIF]
                 placeholder: TRACED_SVG
               )
