@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@browniebroke/gatsby-image-gallery": "^7.0.4",
-    "@fontsource/kaushan-script": "^4.5.2",
+    "@fontsource/kaushan-script": "^4.5.3",
     "@fontsource/noto-serif": "^4.5.4",
     "@fontsource/open-sans": "^4.5.6",
     "cross-env": "^7.0.3",
