@@ -55,9 +55,11 @@ const Footer = ({ elements, transparent }: Props) => {
   };
 
   return (
-    <StyledFooter theme={{ transparent }}>
-      {elements.map((e) => renderElements[e])}
-    </StyledFooter>
+    <Container>
+      <StyledFooter theme={{ transparent }}>
+        {elements.map((e) => renderElements[e])}
+      </StyledFooter>
+    </Container>
   );
 };
 
