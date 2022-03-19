@@ -30,11 +30,12 @@ const Footer = ({ elements, transparent }: Props) => {
         children={parseAddress(address)}
         components={{
           p: ({ children }) => (
-            <P>
-              <StyledLink href="https://goo.gl/maps/jtMEsqZ8ez57tLtn7">
-                {children}
-              </StyledLink>
-            </P>
+            <StyledLink
+              href="https://goo.gl/maps/jtMEsqZ8ez57tLtn7"
+              key="footer-address"
+            >
+              <P>{children}</P>
+            </StyledLink>
           ),
         }}
         key="footer-address"
@@ -42,25 +43,21 @@ const Footer = ({ elements, transparent }: Props) => {
     ),
     copyright: <P key="footer-copyright">{parseCopyright(copyright)}</P>,
     email: (
-      <P key="footer-email">
-        <StyledLink href={`mailto:${email}`}>{email}</StyledLink>
-      </P>
+      <StyledLink key="footer-email" href={`mailto:${email}`}>
+        <P>{email}</P>
+      </StyledLink>
     ),
     phone: (
-      <P key="footer-phone">
-        <StyledLink href={`tel:${stripPhoneNumber(phone)}`}>
-          {phoneString}
-        </StyledLink>
-      </P>
+      <StyledLink key="footer-phone" href={`tel:${stripPhoneNumber(phone)}`}>
+        <P>{phoneString}</P>
+      </StyledLink>
     ),
   };
 
   return (
-    <Container>
-      <StyledFooter theme={{ transparent }}>
-        {elements.map((e) => renderElements[e])}
-      </StyledFooter>
-    </Container>
+    <StyledFooter theme={{ transparent }}>
+      {elements.map((e) => renderElements[e])}
+    </StyledFooter>
   );
 };
 
