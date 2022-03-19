@@ -9,7 +9,7 @@ import theme from "../styles/theme";
 
 const RatesPage = ({ rates, image }: Props) => {
   return (
-    <Layout footerElements={["address", "email", "phone", "copyright"]}>
+    <Layout footerElements={["email", "phone", "address", "copyright"]}>
       <SEO pageTitle="rates" />
       <Grid>
         <Image image={image} />

@@ -25,7 +25,7 @@ function CottagesPage({ cottages, featuredImage }: Props) {
     );
 
   return (
-    <Layout footerElements={["address", "email", "phone", "copyright"]}>
+    <Layout footerElements={["email", "phone", "address", "copyright"]}>
       <SEO pageTitle="cottages" />
       <Select>
         {cottages.map((e, i) => (

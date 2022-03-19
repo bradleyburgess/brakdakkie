@@ -28,7 +28,15 @@ const Footer = ({ elements, transparent }: Props) => {
     address: (
       <ReactMD
         children={parseAddress(address)}
-        components={{ p: ({ children }) => <P>{children}</P> }}
+        components={{
+          p: ({ children }) => (
+            <P>
+              <StyledLink href="https://goo.gl/maps/jtMEsqZ8ez57tLtn7">
+                {children}
+              </StyledLink>
+            </P>
+          ),
+        }}
         key="footer-address"
       />
     ),
@@ -57,6 +65,9 @@ const Footer = ({ elements, transparent }: Props) => {
 };
 
 const StyledFooter = styled.footer`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   max-width: ${theme.sizes.container};
   flex-grow: 1;
   padding: ${(props) => (props.theme.transparent ? "0 0 1rem 0" : "1rem 0")};
