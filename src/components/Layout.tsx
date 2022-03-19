@@ -29,7 +29,6 @@ const Layout = ({
   return (
     <DeviceTypeContext.Provider value={deviceType}>
       <PageContainer transparent={transparent}>
-        {backgroundImage && <BackgroundImage image={backgroundImage} />}
         <HeaderMainWrapper>
           <Header transparent={transparent}>
             <Branding transparent={transparent} />
@@ -50,6 +49,7 @@ const Layout = ({
         </HeaderMainWrapper>
         <WhatsApp />
         <Footer transparent={transparent} elements={footerElements} />
+        {backgroundImage && <BackgroundImage image={backgroundImage} />}
       </PageContainer>
     </DeviceTypeContext.Provider>
   );
