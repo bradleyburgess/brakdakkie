@@ -15,6 +15,7 @@ const SRNav = ({ menuItems }) => (
 );
 
 const Nav = styled.nav`
+  opacity: 0.01;
   position: absolute;
   left: 1000%;
 `;

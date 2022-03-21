@@ -7,7 +7,7 @@ import { useLocation } from "@reach/router";
 const DesktopNav = ({ menuItems, transparent }: Props) => {
   const location = useLocation();
   return (
-    <nav>
+    <Nav>
       <DesktopNavList>
         {menuItems.map((item) => (
           <StyledLink to={`/${item}`} key={`menu-${item}`}>
@@ -20,9 +20,15 @@ const DesktopNav = ({ menuItems, transparent }: Props) => {
           </StyledLink>
         ))}
       </DesktopNavList>
-    </nav>
+    </Nav>
   );
 };
+
+const Nav = styled.nav`
+  @media screen and (max-width: 514px) {
+    display: none;
+  }
+`;
 
 const StyledLink = styled((props) => <Link {...props} />)`
   text-decoration: none;

@@ -1,20 +1,17 @@
 import styled from "styled-components";
 import React, { useContext } from "react";
-import DeviceTypeContext from "../../hooks/DeviceTypeContext";
 import theme from "../../styles/theme";
-import { DeviceType } from "../../hooks/useDeviceType";
 import ReactMarkdown from "react-markdown";
 
 export const Description = ({ content }: Props) => {
-  const deviceType = useContext(DeviceTypeContext);
   return (
-    <Container deviceType={deviceType}>
+    <Container>
       <ReactMarkdown children={content} />
     </Container>
   );
 };
 
-const Container = styled.div<DescriptionProps>`
+const Container = styled.div`
   font-family: ${theme.fonts.serif};
   h1,
   h2,
@@ -30,27 +27,30 @@ const Container = styled.div<DescriptionProps>`
     margin: 0;
   }
   p {
-    text-align: ${(props) =>
-      props.deviceType === "mobile" ? "left" : "center"};
     max-width: 40rem;
     margin: 1rem auto;
+    text-align: left;
   }
   ul {
     margin: 0;
     padding: 1rem;
-    columns: ${(props) => (props.deviceType === "desktop" ? "2" : "1")};
   }
   li {
     margin-bottom: 0.5rem;
-    ${(props) => (props.deviceType === "desktop" ? "max-width: 90%;" : null)}
-    ${(props) =>
-      props.deviceType === "desktop" ? "margin: 0 auto 0.5rem auto;" : null}
+  }
+  @media screen and (min-width: 515px) {
+    p {
+      text-align: center;
+    }
+    ul {
+      columns: 2;
+    }
+    li {
+      max-width: 90%;
+      margin: 0 auto 0.5rem auto;
+    }
   }
 `;
-
-interface DescriptionProps {
-  deviceType: DeviceType;
-}
 
 interface Props {
   content: string;

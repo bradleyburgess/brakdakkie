@@ -1,39 +1,38 @@
 import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-import { useContext } from "react";
 import ReactMarkdown from "react-markdown";
 import styled from "styled-components";
-import DeviceTypeContext from "../../hooks/DeviceTypeContext";
 import theme from "../../styles/theme";
 
 export const RatesCard = ({ number, rate, featuredImage }: Props) => {
-  const deviceType = useContext(DeviceTypeContext);
-  return deviceType === "mobile" ? (
-    <MobileTextContainer background={featuredImage.background}>
-      <Heading>Cottage {number} rates</Heading>
-      <Content content={rate} />
-    </MobileTextContainer>
-  ) : deviceType === "desktop" ? (
-    <DesktopContainer>
-      <DesktopImageConatainer>
-        <GatsbyImage
-          image={featuredImage.full}
-          alt={featuredImage.description}
-          title={featuredImage.description}
-          loading="lazy"
-        />
-      </DesktopImageConatainer>
-      <DesktopTextContainer>
+  return (
+    <>
+      <MobileTextContainer background={featuredImage.background}>
         <Heading>Cottage {number} rates</Heading>
         <Content content={rate} />
-      </DesktopTextContainer>
-    </DesktopContainer>
-  ) : (
-    <div></div>
+      </MobileTextContainer>
+      <DesktopContainer>
+        <DesktopImageConatainer>
+          <GatsbyImage
+            image={featuredImage.full}
+            alt={featuredImage.description}
+            title={featuredImage.description}
+            loading="lazy"
+          />
+        </DesktopImageConatainer>
+        <DesktopTextContainer>
+          <Heading>Cottage {number} rates</Heading>
+          <Content content={rate} />
+        </DesktopTextContainer>
+      </DesktopContainer>
+    </>
   );
 };
 
 const MobileTextContainer = styled.div<MobileTextContainerProps>`
   display: flex;
+  @media screen and (min-width: ${theme.breakpoints.mobile}px) {
+    display: none;
+  }
   position: relative;
   flex-direction: column;
   justify-content: center;
@@ -89,6 +88,9 @@ const Detail = styled.p`
 `;
 
 const DesktopContainer = styled.section`
+  @media screen and (max-width: 514px) {
+    display: none;
+  }
   display: flex;
   padding: 1rem;
   color: ${theme.colors.gray1};

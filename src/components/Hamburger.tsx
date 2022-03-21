@@ -14,8 +14,9 @@ const Hamburger = ({ active, transparent, handleClick }: HamburgerProps) => (
 const MobileMenu = styled.div`
   z-index: 1000;
   position: relative;
-  @media screen and (min-width: ${theme.breakpoints.mobile}) {
+  @media screen and (min-width: ${theme.breakpoints.mobile}px) {
     display: none;
+  }
 `;
 
 const Container = styled.div`

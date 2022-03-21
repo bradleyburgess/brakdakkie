@@ -52,6 +52,9 @@ const MobileNav = ({ menuItems, active }: Props) => {
 
 const Nav = styled.nav<NavProps>`
   display: flex;
+  @media screen and (min-width: 515px) {
+    display: none;
+  }
   flex-direction: column;
   justify-content: center;
   align-items: center;
