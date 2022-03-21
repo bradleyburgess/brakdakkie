@@ -8,6 +8,7 @@ module.exports = {
     title: "Brakdakkie Guest Cottages",
   },
   plugins: [
+    `gatsby-plugin-preact`,
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",
