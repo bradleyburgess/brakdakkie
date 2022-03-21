@@ -1,7 +1,12 @@
+import loadable from "@loadable/component";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
-import { Rotate } from "react-awesome-reveal";
-import ReactMd from "react-markdown";
+// import { Rotate } from "react-awesome-reveal";
+const Rotate = loadable(() => import("react-awesome-reveal"), {
+  resolveComponent: (components) => components.Rotate,
+});
+// import ReactMd from "react-markdown";
+const ReactMd = loadable(() => import("react-markdown"));
 import Button from "../components/Button";
 import { Reviews, SiteTagLine, Container } from "../components/Home";
 import Logo from "../assets/brakdakkie-logo1.svg";
