@@ -22,7 +22,7 @@
     "@fontsource/noto-serif": "^4.5.5",
     "@fontsource/open-sans": "^4.5.6",
     "cross-env": "^7.0.3",
-    "gatsby": "^4.10.1",
+    "gatsby": "^4.10.2",
     "gatsby-plugin-image": "^2.10.0",
     "gatsby-plugin-netlify": "^4.1.0",
     "gatsby-plugin-provide-react": "^1.0.2",
