@@ -1185,10 +1185,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/kaushan-script@^4.5.3":
-  version "4.5.3"
-  resolved "https://registry.yarnpkg.com/@fontsource/kaushan-script/-/kaushan-script-4.5.3.tgz#e42e36ee3b79c88c823b8736d64b3fd05764019c"
-  integrity sha512-rSx5VhQNQIqHdPyb1eMAv59NzW/w01dzSFo7Xe7I62DXrqB4B2PufgqqhX1o+9CWU46hj6vaKsADnXwFJR0D0g==
+"@fontsource/kaushan-script@^4.5.5":
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/kaushan-script/-/kaushan-script-4.5.5.tgz#fd3c5af7ec03a2bea641fd341460ef90ea3a7ddf"
+  integrity sha512-M4lNE5cbRgBPwp3BVjmtpMYlVb0dIJaWdvMha3sYQE7Xbwoaitj04Zo/n95CCZqS1I9VMsXRhYvS8IHk9ewo7Q==
 
 "@fontsource/noto-serif@^4.5.7":
   version "4.5.7"
