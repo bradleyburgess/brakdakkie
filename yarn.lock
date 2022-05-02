@@ -1193,10 +1193,10 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fontsource/kaushan-script@^4.5.5":
-  version "4.5.5"
-  resolved "https://registry.yarnpkg.com/@fontsource/kaushan-script/-/kaushan-script-4.5.5.tgz#fd3c5af7ec03a2bea641fd341460ef90ea3a7ddf"
-  integrity sha512-M4lNE5cbRgBPwp3BVjmtpMYlVb0dIJaWdvMha3sYQE7Xbwoaitj04Zo/n95CCZqS1I9VMsXRhYvS8IHk9ewo7Q==
+"@fontsource/kaushan-script@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@fontsource/kaushan-script/-/kaushan-script-4.5.8.tgz#755ac53cd7519a9824ec0ba8fda0fba0f0e21171"
+  integrity sha512-DQhBra0WB6dVhj6+5LedKtVo2M5DqN9shaseOImH7nMPWnRHbMnpbkkL10GbpavzTVigMGpdNlhTjoPdQo1ZrA==
 
 "@fontsource/noto-serif@^4.5.7":
   version "4.5.7"
