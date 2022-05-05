@@ -34,7 +34,7 @@ jobs:
         env:
           cache-name: build-cache
         with:
-          path: dist
+          path: .cache
           key: ${{ runner.os }}-build-cache
 
       - name: Install dependencies
