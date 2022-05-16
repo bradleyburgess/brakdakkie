@@ -1228,10 +1228,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/noto-serif/-/noto-serif-4.5.7.tgz#ed7ddf1ec583fb36f5bf7520bd4c27499d3ba1a7"
   integrity sha512-2J6ZH4rKfiotDjVh+EPsajL35NFmuMr7JZ6dsHjp5XMVQQN62u1J5XK0nk88UNFBt83in6C5Qmv1Kw9UAB6n+Q==
 
-"@fontsource/open-sans@^4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.8.tgz#31f727353e89ce886e1076bd58536834e0778fda"
-  integrity sha512-3b94XDdRLqL7OlE7OjWg/4pgG825Juw8PLVEDm6h5pio0gMU89ICxfatGxHsBxMGfqad+wnvdmUweZWlELDFpQ==
+"@fontsource/open-sans@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/open-sans/-/open-sans-4.5.10.tgz#c4269c54d6f5f8661322facb5946d8188fadc7f2"
+  integrity sha512-MrtTDfWb1Tu9YxVh2KaKmsKBn6O3KL/lHZS0KRKK58jgqvdwuiDt4QW4udmW4FQf0XOWgnZ+4vKUF80F3SqBAA==
 
 "@gatsbyjs/parcel-namer-relative-to-cwd@0.0.2":
   version "0.0.2"
