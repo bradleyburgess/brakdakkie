@@ -1223,10 +1223,10 @@
   resolved "https://registry.yarnpkg.com/@fontsource/kaushan-script/-/kaushan-script-4.5.8.tgz#755ac53cd7519a9824ec0ba8fda0fba0f0e21171"
   integrity sha512-DQhBra0WB6dVhj6+5LedKtVo2M5DqN9shaseOImH7nMPWnRHbMnpbkkL10GbpavzTVigMGpdNlhTjoPdQo1ZrA==
 
-"@fontsource/noto-serif@^4.5.7":
-  version "4.5.7"
-  resolved "https://registry.yarnpkg.com/@fontsource/noto-serif/-/noto-serif-4.5.7.tgz#ed7ddf1ec583fb36f5bf7520bd4c27499d3ba1a7"
-  integrity sha512-2J6ZH4rKfiotDjVh+EPsajL35NFmuMr7JZ6dsHjp5XMVQQN62u1J5XK0nk88UNFBt83in6C5Qmv1Kw9UAB6n+Q==
+"@fontsource/noto-serif@^4.5.9":
+  version "4.5.9"
+  resolved "https://registry.yarnpkg.com/@fontsource/noto-serif/-/noto-serif-4.5.9.tgz#dae24fe204a8bfaaf98121efbc3adf0b0682af43"
+  integrity sha512-qvVrkuEwAKGKswmaETS9RVzrGTqlvQRHK60TJ9ncH1RA7ujqb8+o8lLgU3dK3KcggQWWfTa/ozNU8sNc1hXH4g==
 
 "@fontsource/open-sans@^4.5.10":
   version "4.5.10"
