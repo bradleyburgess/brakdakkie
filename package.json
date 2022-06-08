@@ -32,7 +32,7 @@
     "gatsby-plugin-styled-components": "^5.15.0",
     "gatsby-source-filesystem": "^4.15.0",
     "gatsby-source-graphcms": "^2.8.0",
-    "gatsby-transformer-sharp": "^4.15.1",
+    "gatsby-transformer-sharp": "^4.16.0",
     "normalize.css": "^8.0.1",
     "react": "^18.1.0",
     "react-animations": "^1.0.0",
