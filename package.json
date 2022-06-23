@@ -17,7 +17,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@browniebroke/gatsby-image-gallery": "^7.0.6",
+    "@browniebroke/gatsby-image-gallery": "^7.0.7",
     "@fontsource/kaushan-script": "^4.5.8",
     "@fontsource/noto-serif": "^4.5.9",
     "@fontsource/open-sans": "^4.5.10",

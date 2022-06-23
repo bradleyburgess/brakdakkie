@@ -1079,10 +1079,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@browniebroke/gatsby-image-gallery@^7.0.6":
-  version "7.0.6"
-  resolved "https://registry.yarnpkg.com/@browniebroke/gatsby-image-gallery/-/gatsby-image-gallery-7.0.6.tgz#85aaeb656da918b63511e044c14fbb19f8381da8"
-  integrity sha512-BY18TD778Ohk8RzrnsAIs7A1HgFk5N0Yw6VyksYtn/CVXiiJk59FmbFfbxCmL/q6Yoij03jZ00bf0wTln6msiQ==
+"@browniebroke/gatsby-image-gallery@^7.0.7":
+  version "7.0.7"
+  resolved "https://registry.yarnpkg.com/@browniebroke/gatsby-image-gallery/-/gatsby-image-gallery-7.0.7.tgz#8d908b23d1117d09e45927795528310d2304f201"
+  integrity sha512-UEKNyOjhWm0cCMKWngsaI4vUA5C9nXgGq3LBVD4PF/AMDY3z7IB8XoHvoJRS8ghWoxw2X5LIctSH7DSN7GFcow==
   dependencies:
     react-image-lightbox "github:browniebroke/react-image-lightbox"
     styled-components ">= 5.0"
