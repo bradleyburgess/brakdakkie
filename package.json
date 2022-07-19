@@ -23,7 +23,7 @@
     "@fontsource/open-sans": "^4.5.10",
     "cross-env": "^7.0.3",
     "gatsby": "^4.19.0",
-    "gatsby-plugin-image": "^2.18.0",
+    "gatsby-plugin-image": "^2.19.0",
     "gatsby-plugin-netlify": "^5.0.0",
     "gatsby-plugin-provide-react": "^1.0.2",
     "gatsby-plugin-react-helmet": "^5.18.0",
